@@ -5,7 +5,7 @@ Steps to be Followed after downloading zip file:-
 
 1) Create a folder named 'exam' inside xampp\htdocs
 
-2) Extract the contents of the zip file to the above created folder
+2) Copy the contets of the current folder to the above created folder
 
 3) Go to this location:-
 

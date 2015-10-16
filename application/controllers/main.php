@@ -69,7 +69,7 @@ class Main extends CI_Controller {
 
 		$this->form_validation->set_rules('user', 'Username', 'callback_search');
 
-		$this->form_validation->set_rules('passwd', 'Password', '');
+		$this->form_validation->set_rules('passwd', 'Password', 'required');
 
 		$this->form_validation->set_rules('confrm', 'Confirm Password', 'matches[passwd]');
 
