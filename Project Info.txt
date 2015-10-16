@@ -1,0 +1,41 @@
+This project as stated before presumes that the user already 
+has xampp installed in his/her system.
+
+Steps to be Followed after downloading zip file:-
+
+1) Create a folder named 'exam' inside xampp\htdocs
+
+2) Extract the contents of the zip file to the above created folder
+
+3) Go to this location:-
+
+	exam\application\config
+
+	
+	(a) Open the file config.php
+
+		set==>    $config['base_url'] to the base of your project.
+
+		e.g. If you are using port # 567 in apache, then we would set as:-
+
+			$config['base_url'] = 'http://localhost:567/exam/';
+
+		Save the file before closing.
+
+	(b) Open the file database.php (It's in the same folder)
+
+		set==>  $db['default']['username'] to your mysql username,
+				$db['default']['password'] to your mysql password
+
+	<=========This project assumes the port used by mysql is the default one: 3306==============>
+	<=========If not change the hostname too accordingly========================================>
+
+
+4) Now open phpmyadmin in your browser.
+
+	Go to 'Import' option. Then select the file called 'exam.sql' lying in the root location (directly inside exam).
+
+	Click 'Go' button.
+
+5) You are good to go.
+
